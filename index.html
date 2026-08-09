@@ -28,7 +28,7 @@
 </div>
 
 <div class="dni-box" id="dniBox">
-  <label>DNI <span class="req">*</span></label>
+  <label>DNI <span class="req"></span></label>
   <input id="dniInput">
   <button id="btnIngresar" onclick="confirmarDNI()">Ingresar</button>
 </div>
@@ -37,12 +37,22 @@
 
 <div class="dni-box" style="display:flex; justify-content:space-between; align-items:center;">
   <div>
-    DNI: <b id="dniFijo"></b>
+   <div id="empresaInfo" class="empresa-info"></div>
+    <div id="empresaRuc" class="empresa-ruc"></div>
+    <div id="dniFijo" class="usuario-nombre"></div>
   </div>
-  <div style="font-weight:600;">
-    Total items: <span id="totalItems">0</span>
-  </div>
+
+<button
+  id="btnCerrarSesion"
+  onclick="cerrarSesion()"
+  title="Cerrar sesión"
+  class="btn-salir"
+>
+  🚪
+</button>
+
 </div>
+
 
 <div class="tabs">
   <div class="tab active" onclick="mostrarTab('reg',this)">Item</div>
@@ -135,6 +145,7 @@
   ⚠️ Duplicado detectado
 </div>
 
+<script src="trabajadores.js"></script>
 <script src="datos_items.js"></script>
 <script src="app.min.js"></script>
 
