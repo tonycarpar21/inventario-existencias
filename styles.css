@@ -61,6 +61,51 @@
   100%{box-shadow:0 0 0 0 rgba(242,140,40,0)}
 }
 
+.usuario-nombre{
+  font-size: 14px;
+  color: #374151;
+  margin-top: 4px;
+}
+
+.empresa-info {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #1f2933;
+}
+
+.empresa-ruc {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.btn-salir{
+  width:36px;
+  height:36px;
+  min-height:36px;
+  padding:0;
+  margin-left:10px;
+  border-radius:8px;
+  background:#e5e7eb;
+  color:#111;
+  font-size:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+
+.btn-salir:disabled{
+  opacity:0.45;
+  cursor:not-allowed;
+}
+
+.btn-salir:active{
+  transform:scale(0.95);
+}
+
 .switch::after{
   content:"";
   width:18px;
@@ -100,10 +145,20 @@
 
 *{box-sizing:border-box;font-family:Segoe UI,Tahoma,sans-serif}
 
-body{margin:0;padding:20px;background:var(--gris)}
+body{
+  margin:0;
+  padding:20px;
+  background:var(--gris)
+}
 
-.header{text-align:center;margin-bottom:20px}
-.header img{height:80px}
+.header{
+  text-align:center;
+  margin-bottom:20px
+}
+
+.header img{
+  height:80px
+}
 
 .dni-box{
   background:white;
@@ -113,15 +168,48 @@ body{margin:0;padding:20px;background:var(--gris)}
   margin:0 auto 20px auto;
 }
 
-.tabs{display:flex;background:white;border-radius:12px;overflow:hidden;margin-bottom:15px}
-.tab{flex:1;padding:12px;text-align:center;cursor:pointer;background:#e9edf1}
-.tab.active{background:white;border-bottom:3px solid var(--naranja)}
+.tabs{
+  display:flex;
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  margin-bottom:15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.04);
+}
 
-.card{background:white;padding:20px;border-radius:15px}
-.hidden{display:none}
+.tab{
+  flex:1;padding:12px;
+  text-align:center;
+  cursor:pointer;
+  background:#e9edf1
+}
 
-label{font-weight:600;margin-top:12px;display:block}
-.req{color:#888}
+.tab.active{
+  background:white;
+  border-bottom:3px solid var(--naranja);
+  box-shadow: 0 4px 12px rgba(0,0,0,.04);
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.06);
+}
+
+.hidden{
+  display:none
+}
+
+label{
+  font-weight:600;
+  margin-top:12px;
+  display:block
+}
+
+.req{
+  color:#888
+}
 
 input,button{
   width:100%;
@@ -133,10 +221,27 @@ input,button{
   font-size:16px;
 }
 
-button{background:var(--azul);color:white;border:none;margin-top:15px;cursor:pointer}
+button{
+  background:var(--azul);
+  color:white;
+  border:none;
+  margin-top:15px;
+  cursor:pointer;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  transition: background .08s ease, transform .08s ease;
+  -webkit-tap-highlight-color: transparent;
+  min-height:48px;
+}
 
-.flex{display:flex;gap:12px}
-.flex>div{flex:1}
+.flex{
+  display:flex;
+  gap:12px
+}
+
+.flex>div{
+  flex:1
+}
 
 .list{
   border:1px solid #ddd;
@@ -146,8 +251,15 @@ button{background:var(--azul);color:white;border:none;margin-top:15px;cursor:poi
   -webkit-overflow-scrolling: touch;
 }
 
-.option{padding:8px;cursor:pointer;border-bottom:1px solid #eee}
-.option:hover{background:#f1f5f9}
+.option{
+  padding:8px;
+  cursor:pointer;
+  border-bottom:1px solid #eee
+}
+
+.option:hover{
+  background:#f1f5f9
+}
 
 .registro{
   padding:10px;
@@ -189,13 +301,13 @@ button{background:var(--azul);color:white;border:none;margin-top:15px;cursor:poi
   gap:10px;
   margin-top:6px;
 }
-.cant-uni input{width:90px}
-.cant-uni span{font-weight:600}
 
-button{
-  transition: background .08s ease, transform .08s ease;
-  -webkit-tap-highlight-color: transparent;
-  min-height:48px;
+.cant-uni input{
+  width:90px
+}
+
+.cant-uni span{
+  font-weight:600
 }
 
 button:active{
