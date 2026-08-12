@@ -337,3 +337,154 @@ button:active{
   opacity:1;
   transform:translateX(-50%) translateY(-6px);
 }
+
+.btn-papelera{
+  width:100%;
+  margin-top:18px;
+  padding:13px 14px;
+
+  background:#e5e7eb;
+  color:#374151;
+
+  border:none;
+  border-radius:10px;
+
+  font-size:15px;
+  font-weight:600;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+
+  cursor:pointer;
+}
+
+.btn-papelera:active{
+  background:#d1d5db;
+  transform:scale(0.98);
+}
+
+.modal-papelera{
+  position:fixed;
+  inset:0;
+
+  background:rgba(0,0,0,.55);
+
+  z-index:9998;
+
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+}
+
+.modal-papelera.hidden{
+  display:none;
+}
+
+.papelera-contenedor{
+  width:100%;
+  max-width:430px;
+
+  max-height:85vh;
+
+  background:#f4f6f8;
+
+  border-radius:18px 18px 0 0;
+
+  padding:18px;
+
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+}
+
+.papelera-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  margin-bottom:16px;
+}
+
+.papelera-header h2{
+  margin:0;
+  font-size:20px;
+  color:#243846;
+}
+
+.papelera-header small{
+  color:#6b7280;
+  font-size:12px;
+}
+
+.btn-cerrar-papelera{
+  width:38px;
+  height:38px;
+  min-height:38px;
+
+  padding:0;
+  margin:0;
+
+  background:#e5e7eb;
+  color:#374151;
+
+  border:none;
+  border-radius:8px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:18px;
+}
+
+.registro-papelera{
+  background:white;
+
+  border-radius:12px;
+
+  padding:14px;
+
+  margin-bottom:12px;
+
+  border-left:4px solid #dc2626;
+}
+
+.papelera-codigo{
+  font-size:15px;
+  font-weight:700;
+  color:#111827;
+
+  margin-bottom:4px;
+}
+
+.papelera-descripcion{
+  font-size:14px;
+  color:#374151;
+
+  margin-bottom:10px;
+}
+
+.papelera-datos{
+  font-size:13px;
+  color:#4b5563;
+
+  line-height:1.7;
+}
+
+.papelera-eliminado{
+  color:#b91c1c;
+}
+
+.papelera-vacia{
+  background:white;
+
+  border-radius:12px;
+
+  padding:30px 15px;
+
+  text-align:center;
+
+  font-size:14px;
+  color:#6b7280;
+}
