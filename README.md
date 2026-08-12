@@ -1,2 +1,2 @@
 # inventario_existencias
-Inventario físico 2026
+Inventario físico de existencias
