@@ -131,9 +131,43 @@
 
 <div id="tab-mis" class="card hidden">
   <button onclick="exportar()">Exportar CSV</button>
+
   <div id="listaRegistros"></div>
+
+  <button
+    id="btnPapelera"
+    class="btn-papelera"
+    onclick="abrirPapelera()"
+  >
+    🗑️ Papelera (<span id="contadorPapelera">0</span>)
+  </button>
+</div>
 </div>
 
+<div id="modalPapelera" class="modal-papelera hidden">
+
+  <div class="papelera-contenedor">
+
+    <div class="papelera-header">
+
+      <div>
+        <h2>🗑️ Papelera</h2>
+        <small>Registros eliminados</small>
+      </div>
+
+      <button
+        type="button"
+        class="btn-cerrar-papelera"
+        onclick="cerrarPapelera()"
+      >
+        ✕
+      </button>
+
+    </div>
+
+    <div id="listaPapelera"></div>
+
+  </div>
 </div>
 
 <div class="footer">
