@@ -4,8 +4,8 @@
 ===================================== */
 
 window.datosEmpresa = {
-  nombre: "Almacén XXXXXX",
-  ruc: "0909090909090909"
+  nombre: "Minera Toro de Plata S.A.C.",
+  ruc: "20507444181"
 };
 
 window.trabajadores = [
@@ -28,5 +28,17 @@ window.trabajadores = [
   {
     nombre: "Lopez Cordova, Kenia Dennis",
     dni: "75192933"
+  },
+  {
+    nombre: "XXXX",
+    dni: "00000000"
+  },
+  {
+    nombre: "YYYY",
+    dni: "11111111"
+  },
+  {
+    nombre: "ZZZZ",
+    dni: "22222222"
   },
 ];
