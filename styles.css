@@ -262,11 +262,17 @@ button{
 }
 
 .registro{
-  padding:10px;
-  border-bottom:1px solid #eee;
+  padding:14px 0;
+  border-bottom:1px solid #e5e7eb;
   display:flex;
-  justify-content:space-between;
-  gap:10px;
+  flex-direction:column;
+  width:100%;
+  overflow-wrap:anywhere;
+}
+
+.registro > div{
+  width:100% !important;
+  padding-right:0;
 }
 
 .registro.duplicado{
@@ -275,18 +281,46 @@ button{
 }
 
 .btn-del{
-  width:32px;
-  height:32px;
+  width:34px;
+  height:34px;
+  min-height:34px;
+
+  padding:0;
+  margin:8px 0 0 auto;
+
   background:#e5e7eb;
+  color:#374151;
   border:none;
-  border-radius:6px;
+  border-radius:7px;
+
   cursor:pointer;
+
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:16px;
+
+  font-size:15px;
   line-height:1;
-  padding:0;
+
+  flex:none;
+}
+
+.btn-del:active{
+  background:#d1d5db;
+  transform:scale(0.95);
+}
+
+.btn-del:active{
+  background:#d1d5db;
+  transform:scale(0.95);
+}
+
+.registro b{
+  display:block;
+  line-height:1.35;
+  margin-bottom:4px;
+  overflow-wrap:anywhere;
+  word-break:break-word;
 }
 
 .footer{
