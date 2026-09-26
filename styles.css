@@ -262,17 +262,35 @@ button{
 }
 
 .registro{
-  padding:14px 0;
-  border-bottom:1px solid #e5e7eb;
+  padding:14px;
+  margin-bottom:12px;
+
+  background:#f8fafc;
+  border:1px solid #e5e7eb;
+  border-radius:10px;
+
   display:flex;
   flex-direction:column;
   width:100%;
+
   overflow-wrap:anywhere;
+}
+
+.registro b{
+  display:block;
+  line-height:1.35;
+  margin-bottom:6px;
+  color:#17212b;
+  font-size:15px;
+
+  overflow-wrap:anywhere;
+  word-break:break-word;
 }
 
 .registro > div{
   width:100% !important;
   padding-right:0;
+  line-height:1.55;
 }
 
 .registro.duplicado{
@@ -346,6 +364,12 @@ button{
 
 button:active{
   background:#1b2e4a;
+  transform:scale(0.97);
+}
+
+.btn-cargar:active{
+  background:#E9EDF1;
+  color:#0b3c5d;
   transform:scale(0.97);
 }
 
