@@ -42,14 +42,18 @@
     <div id="dniFijo" class="usuario-nombre"></div>
   </div>
 
-<button
-  id="btnCerrarSesion"
-  onclick="cerrarSesion()"
-  title="Cerrar sesión"
-  class="btn-salir"
->
-  🚪
-</button>
+<div class="salir-box">
+  <span class="salir-texto">Cerrar sesión</span>
+
+  <button
+    id="btnCerrarSesion"
+    onclick="cerrarSesion()"
+    title="Cerrar sesión"
+    class="btn-salir"
+  >
+    <span class="logout-icon"></span>
+  </button>
+</div>
 
 </div>
 
@@ -57,36 +61,80 @@
 <div class="tabs">
   <div class="tab active" onclick="mostrarTab('reg',this)">Item</div>
   <div class="tab" onclick="mostrarTab('ubi',this)">Ubicación</div>
-  <div class="tab" onclick="mostrarTab('mis',this)">
-    Registros (<span id="contador">0</span>)
-  </div>
+  <div class="tab" onclick="mostrarTab('mis',this)">Registros (<span id="contador">0</span>)</div>
 </div>
 
 <div id="tab-reg" class="card">
   <label>Código del item <span class="req"></span></label>
 
-  <div style="display:flex; gap:8px; align-items:center;">
-    <input id="codigo" onkeyup="filtrarItems()" style="flex:1">
+  <div class="input-con-mic">
+    <input
+      id="codigo"
+      onkeyup="filtrarItems()"
+    >
+
     <button
       type="button"
       id="btnVozCodigo"
       class="btn-mic"
       onclick="dictarCodigo()"
-      >
-      🎤
-     </button>
-
+    >
+      <span class="mic-icon"></span>
+    </button>
   </div>
 
   <div id="listaItems" class="list hidden"></div>
 
+  <button
+    type="button"
+    id="btnSinCodigo"
+    class="btn-sin-codigo"
+  >
+    ＋ Mantener para registrar ítem sin código
+  </button>
+
+  <div id="avisoSinCodigo" class="aviso-sin-codigo hidden">
+    <div>
+      <span class="etiqueta-sin-codigo">ÍTEM NO REGISTRADO</span>
+      <div id="codigoSinCodigo" class="codigo-sin-codigo"></div>
+    </div>
+
+    <button
+      type="button"
+      class="btn-salir-sin-codigo"
+      onclick="desactivarSinCodigo()"
+    >
+      ✕ Salir
+    </button>
+  </div>
+
   <label>Descripción</label>
   <input id="descripcionItem" readonly>
 
-  <label>Ubicación <span class="req"></span></label>
+  <div class="label-switch">
+    <label>Ubicación <span class="req"></span></label>
+
+    <div
+      id="switchUbicacion"
+      class="switch-fijar"
+      onclick="toggleFijar('ubicacion')"
+      title="Mantener ubicación"
+    ></div>
+  </div>
+
   <input id="ubicacion">
 
-  <label>Equipo <span style="font-weight:400; color:#6b7280;"></span></label>
+  <div class="label-switch">
+    <label>Equipo</label>
+
+    <div
+      id="switchEquipo"
+      class="switch-fijar"
+      onclick="toggleFijar('equipo')"
+      title="Mantener equipo"
+    ></div>
+  </div>
+
   <input
     id="equipo"
     autocomplete="off"
@@ -100,6 +148,10 @@
     <div>
       <label>Unidad de medida</label>
       <input id="unidad" readonly>
+
+      <select id="unidadSinCodigo" class="hidden">
+        <option value="">Seleccionar</option>
+      </select>
     </div>
   </div>
 
@@ -112,11 +164,10 @@
 <div id="tab-ubi" class="card hidden">
 <label>Ubicación <span class="req"></span></label>
 
-<div style="display:flex; gap:8px; align-items:center;">
+<div class="input-con-mic">
   <input
     id="ubicacionMasiva"
     onkeyup="filtrarUbicaciones()"
-    style="flex:1"
   >
 
   <button
@@ -125,9 +176,10 @@
     class="btn-mic"
     onclick="dictarUbicacion()"
   >
-    🎤
+    <span class="mic-icon"></span>
   </button>
 </div>
+
   <div id="listaUbicaciones" class="list hidden"></div>
 
   <button id="btnCargar" class="btn-cargar" onclick="cargarPorUbicacion()">Cargar items</button>
