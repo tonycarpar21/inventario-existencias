@@ -22,7 +22,7 @@ window.trabajadores = [
     dni: "07634877"
   },
   {
-    nombre: "Mancilla, Kevin",
+    nombre: "Mancilla Mina, Kevin",
     dni: "72744090"
   },
   {
