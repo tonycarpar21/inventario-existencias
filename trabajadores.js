@@ -4,29 +4,25 @@
 ===================================== */
 
 window.datosEmpresa = {
-  nombre: "Minera Toro de Plata S.A.C.",
+  nombre: "MINERA TORO DE PLATA S.A.C.",
   ruc: "20507444181"
 };
 
 window.trabajadores = [
   {
-    nombre: "Carranza Paredes, Anthony David",
-    dni: "72420939"
+    nombre: "Gonzales Arias, Luis Angel",
+    dni: "73254980"
   },
   {
     nombre: "Carranza Paredes, Aldo Jimmy",
     dni: "72420936"
   },
   {
-    nombre: "Carranza Lopez, Arnold Jimmy",
-    dni: "07634877"
-  },
-  {
-    nombre: "Mancilla Mina, Kevin",
+    nombre: "Mancilla Nina, Kenedy Renso",
     dni: "72744090"
   },
   {
-    nombre: "Gonzales Arias, Luis Angel",
-    dni: "73254980"
+    nombre: "Carranza Lopez, Arnold Jimmy",
+    dni: "07634877"
   },
 ];
