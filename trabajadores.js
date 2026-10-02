@@ -18,27 +18,15 @@ window.trabajadores = [
     dni: "72420936"
   },
   {
-    nombre: "Carranza Paredes, Arnold Piero",
-    dni: "72420940"
-  },
-  {
     nombre: "Carranza Lopez, Arnold Jimmy",
     dni: "07634877"
   },
   {
-    nombre: "Lopez Cordova, Kenia Dennis",
-    dni: "75192933"
+    nombre: "Mancilla, Kevin",
+    dni: "72744090"
   },
   {
-    nombre: "XXXX",
-    dni: "00000000"
-  },
-  {
-    nombre: "YYYY",
-    dni: "11111111"
-  },
-  {
-    nombre: "ZZZZ",
-    dni: "22222222"
+    nombre: "Gonzales Arias, Luis Angel",
+    dni: "73254980"
   },
 ];
