@@ -10,7 +10,7 @@ window.datosEmpresa = {
 
 window.trabajadores = [
   {
-    nombre: "Ingrid la mamá de tus 9 hijos",
+    nombre: "Gonzales Arias, Luis Angel",
     dni: "73254980"
   },
   {
